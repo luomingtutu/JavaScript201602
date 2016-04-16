@@ -4,7 +4,7 @@ var Img=div.getElementsByTagName("img");
 var jsonDate=null;
 !function(){
    var xhr=new XMLHttpRequest();
-    xhr.open("get","json/json.txt",false);
+    xhr.open("get","json/json.txt?_="+Math.random(),false);
 
     xhr.onreadystatechange=function(){
         if(xhr.readyState===4&&/^2\d+\{2}$/.test(xhr.status)){
